@@ -21,7 +21,7 @@ async function getImageData(users) {
 //to get the users data
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    usersData = await loadUsers("http://hp-api.herokuapp.com/api/characters");
+    usersData = await loadUsers("https://hp-api.herokuapp.com/api/characters");
     getImageData(usersData);
   } catch (e) {
     console.log(e);
